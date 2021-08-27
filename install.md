@@ -28,6 +28,8 @@ composer install
 cp .env.example .env
 php artisan key:generate
 ```
+Make sure all variables in .env file are set
+
 2. Run this command to generate documentation
 ```
 php artisan scribe:generate
