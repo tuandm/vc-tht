@@ -21,7 +21,12 @@ Colony, and your task is to help us:
 #### Installation
 1. Clone the project, run composer to setup a basic Laravel project (No DB stuff required)
 ```
+# Composer 
 composer install
+
+# .env and key generation
+cp .env.example .env
+php artisan key:generate
 ```
 2. Run this command to generate documentation
 ```
