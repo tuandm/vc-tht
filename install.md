@@ -19,7 +19,10 @@ Colony, and your task is to help us:
 - This project is based on Laravel framework. Please be ready for the latest [Laravel](https://laravel.com)   
 
 #### Installation
-1. Clone the project, run composer to setup basic a Laravel project
+1. Clone the project, run composer to setup a basic Laravel project (No DB stuff required)
+```
+composer install
+```
 2. Run this command to generate documentation
 ```
 php artisan scribe:generate
