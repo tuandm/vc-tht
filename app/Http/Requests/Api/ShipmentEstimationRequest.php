@@ -4,9 +4,6 @@ namespace App\Http\Requests\Api;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-/**
- * @bodyParam shipment_left_time string required UTC date as a string, must be greater than LST starting point (1969-07-21 02:56:15). Example: 2021-08-26 12:30:35
- */
 class ShipmentEstimationRequest extends FormRequest
 {
     /**
@@ -28,6 +25,20 @@ class ShipmentEstimationRequest extends FormRequest
     {
         return [
             'shipment_left_time' => 'required|date',
+        ];
+    }
+
+    /**
+     * For documentation
+     * @return \string[][]
+     */
+    public function bodyParameters()
+    {
+        return [
+            'shipment_left_time' => [
+                'description' => 'UTC date as a string, must be greater than LST starting point (1969-07-21 02:56:15)',
+                'example' => '2021-08-26 12:30:35',
+            ],
         ];
     }
 }
